@@ -450,7 +450,7 @@ button.gh-form-input {
     height: 100px;
     font-size: 1.5rem;
     font-weight: 550;
-    background-color: var(--background-color);
+    background-color: #f8f9fa;
     color: var(--color-darker-gray);
 }
 
@@ -918,6 +918,9 @@ Search                         LOGO                    Login Subscribe
 
 .gh-card {
     position: relative;
+    background: white;
+    padding: 1.3rem;
+    border-radius: 10px;
 }
 
 .gh-card-link {
@@ -934,6 +937,7 @@ Search                         LOGO                    Login Subscribe
     position: relative;
     flex-shrink: 0;
     aspect-ratio: 16 / 9;
+    border-radius: 10px;
 }
 
 .gh-card-image img {
