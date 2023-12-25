@@ -937,7 +937,7 @@ Search                         LOGO                    Login Subscribe
     position: relative;
     flex-shrink: 0;
     aspect-ratio: 16 / 9;
-    border-radius: 10px;
+    
 }
 
 .gh-card-image img {
@@ -946,6 +946,7 @@ Search                         LOGO                    Login Subscribe
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-radius: 10px;
 }
 
 .gh-card-wrapper {
