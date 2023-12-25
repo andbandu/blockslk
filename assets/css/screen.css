@@ -958,10 +958,11 @@ Search                         LOGO                    Login Subscribe
 }
 
 .gh-card-title {
-    font-size: calc(1.9rem * var(--factor, 1));
-    font-weight: 725;
-    letter-spacing: -0.014em;
-    line-height: 1.3;
+    font-size: calc(1.5rem * var(--factor, 1));
+    font-weight: 900;
+    letter-spacing: -0.05rem;
+    line-height: 1.4;
+    word-spacing: 0.15em;
 }
 
 .gh-card-link:hover .gh-card-title {
@@ -1227,10 +1228,11 @@ Search                         LOGO                    Login Subscribe
 }
 
 .gh-header.is-highlight .gh-header-left .gh-card .gh-card-title {
-    font-size: clamp(2.8rem, 1.36vw + 2.25rem, 4rem);
+    font-size: clamp(2.8rem, 1.36vw + 1.6rem, 4rem);
     font-weight: 700;
-    line-height: 1.1;
-    letter-spacing: -0.022em;
+    letter-spacing: -.05em;
+    line-height: 1.4;
+    word-spacing: 0.15em;
 }
 
 .gh-header.is-highlight .gh-header-left .gh-card .gh-card-excerpt {
@@ -2768,6 +2770,14 @@ figcaption a {
 .gh-footer-copyright {
     text-align: right;
     white-space: nowrap;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    justify-content: flex-end;
+}
+
+.gh-footer-copyright img{
+    width: 22px;
 }
 
 .gh-footer-copyright a {
