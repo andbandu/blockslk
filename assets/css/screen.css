@@ -517,14 +517,14 @@ button.gh-form-input {
     justify-content: flex-end;
 }
 
-.gh-navigation-members {
+.gh-navigation-members , .gh-socials{
     display: flex;
     gap: 20px;
     align-items: center;
     white-space: nowrap;
 }
 
-.gh-navigation-members .gh-button {
+.gh-navigation-members .gh-button, .gh-socials .gh-button{
     font-size: inherit;
     font-weight: 600;
 }
@@ -539,7 +539,7 @@ button.gh-form-input {
         white-space: normal;
     }
 
-    .gh-navigation-members {
+    .gh-navigation-members , .gh-socials{
         flex-direction: column-reverse;
         gap: 16px;
         width: 100%;
@@ -3338,6 +3338,3 @@ figcaption a {
 }
 
 
-.gh-portal-triggerbtn-wrapper{
-    display: none !important;
-}
