@@ -3362,4 +3362,15 @@ figcaption a {
     fill: white;
 }
 
+/* source section styling */
+
+.source-wrapper p{
+    font-size: 12px;
+    font-style: italic;
+}
+
+.source-wrapper a{
+    font-size: 14px;
+}
+
 
