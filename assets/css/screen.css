@@ -954,12 +954,19 @@ Search                         LOGO                    Login Subscribe
 }
 
 .gh-card-tag {
-    display: none;
-    margin-bottom: 4px;
-    font-size: 1.2rem;
+    margin-bottom: 8px;
+    font-size: 0.85rem;
     font-weight: 500;
     letter-spacing: 0.01em;
     text-transform: uppercase;
+    width: fit-content;
+    border-radius: 5px;
+    padding: 0 5px;
+    font-weight: 600;
+    color: white;
+    background: #F7931A;
+    padding-top: 1px;
+    opacity: 0.7;
 }
 
 .gh-card-title {
@@ -1280,7 +1287,7 @@ Search                         LOGO                    Login Subscribe
 }
 
 .gh-header.is-highlight .gh-featured-feed .gh-card-title {
-    font-size: clamp(1.4rem, 0.23vw + 1.31rem, 1.6rem);
+    font-size: clamp(1.4rem, 0.23vw + 1.2rem, 1.6rem);
 }
 
 .gh-header.is-highlight .gh-header-left::after,
@@ -1494,6 +1501,15 @@ Search                         LOGO                    Login Subscribe
     letter-spacing: 0.025em;
     text-transform: uppercase;
     border-bottom: 1px solid var(--color-border);
+    display: flex;
+    align-items: flex-end;
+    gap: 5px;
+}
+.gh-featured-title span svg{
+    width: 14px;
+}
+.gh-featured-title span svg path{
+    stroke:#F7931A !important; 
 }
 
 .gh-featured-feed {
@@ -1538,7 +1554,7 @@ Search                         LOGO                    Login Subscribe
 .gh-featured-feed .gh-card-title {
     font-size: 1.6rem;
     font-weight: 650;
-    letter-spacing: -0.011em;
+    letter-spacing: -0.05em;
 }
 
 @container featured-card-wrapper (width < 170px) {
@@ -2780,6 +2796,10 @@ figcaption a {
     align-items: center;
     gap: 0.8rem;
     justify-content: flex-end;
+}
+
+.gh-footer-copyright span{
+    font-size: 0.85em;
 }
 
 .gh-footer-copyright img{
