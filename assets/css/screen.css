@@ -3370,7 +3370,8 @@ figcaption a {
 }
 
 .source-wrapper a{
-    font-size: 14px;
+    font-size: 13px;
+    opacity: 0.8;
 }
 
 
