@@ -43,10 +43,9 @@
             {{> "feature-image"}}
 
         </header>
-
+        
         <section class="gh-content gh-canvas is-body">
             {{> social-share}}
-
             {{content}}
         </section>
 
@@ -76,19 +75,3 @@
         </section>
     {{/if}}
 {{/get}}
-<script>
-    window.addEventListener('scroll', function() {
-  const parent = document.querySelector('.gh-content');
-  const child = document.querySelector('.social-share-section');
-
-  const originalTop = child.offsetTop;
-
-  if (window.scrollY >= parent.offsetTop) {
-    child.style.position = 'sticky';
-  } else {
-    child.style.position = 'absolute';
-
-  }
-});
-
-</script>

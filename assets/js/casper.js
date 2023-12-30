@@ -44,3 +44,41 @@
         pagination();
     }
 })();
+
+
+/* Scroll to top button js */
+
+(function () {
+    document.addEventListener("DOMContentLoaded", function () {
+        var scrollToTopBtn = document.getElementById("scrollToTopBtn");
+
+        // Scroll to the top when the button is clicked
+        scrollToTopBtn.addEventListener("click", function () {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
+        });
+    });
+})();
+
+/* Copy to clipboard btn */
+(function () {
+    const copyButton = document.getElementById('copy-button');
+    const copyMessage = document.getElementById('copy-message');
+
+    copyButton.addEventListener('click', () => {
+        const url = window.location.href;
+        navigator.clipboard.writeText(url)
+            .then(() => {
+                copyMessage.textContent = 'Link copied!';
+                copyMessage.style.display = 'block';
+                setTimeout(() => {
+                    copyMessage.style.display = 'none';
+                }, 1000);
+            })
+            .catch(err => {
+                console.error('Failed to copy: ', err);
+                copyMessage.textContent = 'Failed to copy link :(';
+                copyMessage.style.display = 'block';
+            });
+    });
+})();

@@ -7,8 +7,7 @@
                 d="M6.667 19.998a13.34 13.34 0 0011.248 13.171v-9.318h-3.382v-3.853h3.386v-2.934a4.704 4.704 0 015.03-5.2c1.002.017 2 .106 2.987.267v3.279h-1.685a1.928 1.928 0 00-2.17 2.084v2.504h3.694l-.59 3.854H22.08v9.317c7.005-1.107 11.918-7.505 11.179-14.56-.74-7.053-6.872-12.294-13.955-11.924-7.083.37-12.637 6.22-12.639 13.313z"
                 fill="#1877f2"></path>
         </svg></a>
-    <a target="_blank" rel="noreferrer noopener"
-        href="https://twitter.com/intent/tweet?text={{title}}{{@site.url}}/{{title}}"
+    <a target="_blank" rel="noreferrer noopener" href="https://twitter.com/intent/tweet?text={{title}}{{@site.url}}"
         data-testid="shares-link-twitter"><svg width="40" height="40" viewBox="0 0 40 40" fill="none"
             xmlns="http://www.w3.org/2000/svg">
             <rect width="40" height="40" rx="4" fill="white"></rect>
@@ -41,19 +40,19 @@
                 fill="#25D366"></path>
         </svg></a>
     <div class="copy-btn-wrapper">
-        <button id="copy-button"><svg width="40" height="40" viewBox="0 0 40 40"
-            fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect width="40" height="40" rx="4" fill="white"></rect>
-            <path
-                d="M13.75 10A3.75 3.75 0 0010 13.75v7.5A3.75 3.75 0 0013.75 25h7.5A3.75 3.75 0 0025 21.25v-7.5A3.75 3.75 0 0021.25 10h-7.5z"
-                fill="#495057"></path>
-            <path
-                d="M18.75 30A3.75 3.75 0 0115 26.25h2.5c0 .69.56 1.25 1.25 1.25h7.5c.69 0 1.25-.56 1.25-1.25v-7.5c0-.69-.56-1.25-1.25-1.25V15A3.75 3.75 0 0130 18.75v7.5A3.75 3.75 0 0126.25 30h-7.5z"
-                fill="#495057"></path>
-        </svg><!----></button>
-    <span id="copy-message"></span>
+        <button id="copy-button"><svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <rect width="40" height="40" rx="4" fill="white"></rect>
+                <path
+                    d="M13.75 10A3.75 3.75 0 0010 13.75v7.5A3.75 3.75 0 0013.75 25h7.5A3.75 3.75 0 0025 21.25v-7.5A3.75 3.75 0 0021.25 10h-7.5z"
+                    fill="#495057"></path>
+                <path
+                    d="M18.75 30A3.75 3.75 0 0115 26.25h2.5c0 .69.56 1.25 1.25 1.25h7.5c.69 0 1.25-.56 1.25-1.25v-7.5c0-.69-.56-1.25-1.25-1.25V15A3.75 3.75 0 0130 18.75v7.5A3.75 3.75 0 0126.25 30h-7.5z"
+                    fill="#495057"></path>
+            </svg><!----></button>
+        <span id="copy-message"></span>
     </div>
-    <button onclick="topFunction()" type="button" class="btn group shares-list__btn"
+    <button id="scrollToTopBtn" type="button" class="btn group shares-list__btn"
         data-gtm-locator="article_122006_clickon_top_button"><svg width="40" height="40" viewBox="0 0 40 40" fill="none"
             xmlns="http://www.w3.org/2000/svg"
             class="text-fg-primaryDefault group-hover:!text-fg-primaryStrong to-top-icon">
@@ -63,33 +62,3 @@
                 fill="#F7931A"></path>
         </svg></button>
 </div>
-<script>
-    function
-
-        topFunction() {
-        document.body.scrollTop = 0; // For Safari
-
-
-        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-    }
-
-    const copyButton = document.getElementById('copy-button');
-    const copyMessage = document.getElementById('copy-message');
-
-    copyButton.addEventListener('click', () => {
-        const url = window.location.href;
-        navigator.clipboard.writeText(url)
-            .then(() => {
-                copyMessage.textContent = 'Link copied!';
-                copyMessage.style.display = 'block';
-                setTimeout(() => {
-                    copyMessage.style.display = 'none';
-                }, 1000);
-            })
-            .catch(err => {
-                console.error('Failed to copy: ', err);
-                copyMessage.textContent = 'Failed to copy link :(';
-                copyMessage.style.display = 'block';
-            });
-    });
-</script>
