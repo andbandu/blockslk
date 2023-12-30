@@ -2132,6 +2132,7 @@ headings, text, images and lists. We deal with cards lower down. */
 .gh-content {
     font-size: var(--content-font-size, 1.7rem);
     letter-spacing: -0.01em;
+    position: relative;
 }
 
 /* Default vertical spacing */
@@ -3375,3 +3376,48 @@ figcaption a {
 }
 
 
+/* social Share section styling */
+
+.social-share-section{
+    position: sticky;
+    left: 0;
+    top: 34px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    z-index: 999;
+    grid-column: wide-start / main-start;
+    
+}
+
+.social-share-section svg{
+    width: 40px;
+    height: 40px;
+}
+
+.social-share-section button{
+    width: fit-content;
+    padding: 0;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.social-share-section button:hover{
+    opacity: 0.8;
+}
+
+.copy-btn-wrapper{
+    position: relative;
+}
+
+#copy-message{
+    position: absolute;
+    left: 50px;
+    background: white;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 1rem;
+    top: 5px;
+
+}
